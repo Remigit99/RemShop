@@ -1,0 +1,61 @@
+import { LiaShoppingBagSolid } from "react-icons/lia"
+import { CiSearch } from "react-icons/ci"
+import { BsPersonCircle } from "react-icons/bs"
+import { AiOutlineHeart } from "react-icons/ai"
+
+const Navbar = () => {
+    return (
+        <>
+            <nav>
+                <div className="container nav__container">
+
+                    <div className="logo">
+                        <h2>RemiShop</h2>
+                    </div>
+
+
+
+                    <ul className="nav__left">
+
+                        <div className="search__box">
+                            <input type="search" name="search" id="search" placeholder="Search" />
+                            <CiSearch />
+                        </div>
+
+                        <div className="nav__more">
+                            <div>
+                                <BsPersonCircle />
+                            </div>
+                            <div>
+                                <AiOutlineHeart />
+                            </div>
+                            <div className="nav__cart">
+                                <LiaShoppingBagSolid className="icon" />
+                                <span className="items">0</span>
+                            </div>
+                        </div>
+
+                    </ul>
+
+                </div>
+            </nav>
+
+
+            <div className="container nav__sec">
+                <ul className="nav__sec-items">
+                    {/* change to React Router Link */}
+                    <li>New Arrivals</li>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                    <li>Brands</li>
+                    <li>Sales</li>
+                </ul>
+            </div>
+
+        </>
+
+    )
+}
+
+export default Navbar

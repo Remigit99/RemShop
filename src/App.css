@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+body {
+  font-family: "Urbanist";
+}
+
+nav {
+  background-color: burlywood;
+  width: 100vw;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .nav__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.nav__left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.search__box {
+  display: flex;
+  align-items: center;
+}
+
+.search__box input {
+  background-color: transparent;
+  padding: 0.5rem;
+  border-bottom: 1px solid grey;
+}
+
+.nav__more {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.nav__cart {
+  position: relative;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.items {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: rgb(128, 128, 128);
+  display: grid;
+  place-items: center;
+}
+
+.nav__sec {
+  padding: 1rem 0;
+  width: 100svw;
+}
+
+.nav__sec-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
