@@ -18,6 +18,12 @@
   margin: 0 auto;
 }
 
+img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 
 body {
   font-family: "Urbanist";
@@ -99,4 +105,18 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
+}
+
+/*=========== Landing Page ========*/
+
+.header__img {
+  margin: 1.5rem 0 3rem;
+}
+
+/*=========== Categories ========*/
+
+
+.cat__header {
+  display: flex;
+  justify-content: space-between;
 }
