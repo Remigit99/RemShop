@@ -24,6 +24,11 @@ img {
   display: block;
 }
 
+input {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
 
 body {
   font-family: "Urbanist";
@@ -119,4 +124,36 @@ nav {
 .cat__header {
   display: flex;
   justify-content: space-between;
+}
+
+/*=========== Register Page ========*/
+
+.register__container {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.reg {
+  /* height: 80vh; */
+  padding: 1.5rem 2rem;
+  background-color: gray;
+  min-width: 300px;
+  border-radius: 2rem;
+}
+
+.register__header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.reg-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.user__avatar {
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
