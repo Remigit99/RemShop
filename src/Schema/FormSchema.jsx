@@ -7,7 +7,7 @@ const myFormSchema = yup.object().shape({
     username: yup.string().required("Required"),
     email: yup.string().email().required("Required"),
     password: yup.string().min(6).required("Required"),
-    agree: yup.boolean(true).required("Required"),
+    agree: yup.bool().oneOf([true], "Checkbox selection is required").required("Required"),
 
 })
 
