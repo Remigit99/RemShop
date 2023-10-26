@@ -309,3 +309,19 @@ nav {
 .newsletter p {
   width: 60%;
 }
+
+section button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/*======== Best Seller ==========*/
+
+
+.bsell__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

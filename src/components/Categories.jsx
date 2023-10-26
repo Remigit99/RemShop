@@ -1,4 +1,4 @@
-import React from 'react'
+import { GoArrowUpRight } from "react-icons/go"
 import { catData } from "../Data/CatData"
 
 const Categories = () => {
@@ -8,6 +8,7 @@ const Categories = () => {
                 <div className="cat__header">
                     <h1>Categories</h1>
                     <button className='btn btn-view' type="button">
+                        <GoArrowUpRight />
                         View all
                     </button>
                 </div>

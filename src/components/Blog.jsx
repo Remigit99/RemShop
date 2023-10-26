@@ -1,4 +1,4 @@
-import React from 'react'
+import { GoArrowUpRight } from "react-icons/go"
 import CTABANNER1 from "../assets/Imgs/cta-banner.jpg"
 import BANNER1 from "../assets/Imgs/blog-1.jpg"
 import NEWSLET from "../assets/Imgs/newsletter.png"
@@ -11,6 +11,7 @@ const Blog = () => {
                 <div className="blog__header">
                     <h1>Blog</h1>
                     <button className='btn btn-view' type="button">
+                        <GoArrowUpRight />
                         View all
                     </button>
                 </div>
@@ -42,7 +43,7 @@ const Blog = () => {
 
                         <div className="newsletter">
                             <div className="newslet__header">
-                                <button type="button" className='btn btn-subscribe'> subscribe</button>
+                                <button type="button" className='btn btn-subscribe'> Subscribe</button>
                                 <div className="sub__people">
                                     <img src={NEWSLET} alt="subscribed" />
                                 </div>
