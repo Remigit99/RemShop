@@ -2,6 +2,7 @@
 import Navbar from '../components/Navbar'
 import Header from '../components/Header'
 import Categories from '../components/Categories'
+import Blog from '../components/Blog'
 
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
             <Navbar />
             <Header />
             <Categories />
+            <Blog />
         </div>
     )
 }

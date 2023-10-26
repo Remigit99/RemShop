@@ -19,10 +19,14 @@ const Categories = () => {
                             return <article className="cat" key={id}>
                                 <div className="cover__img">
                                     <img src={coverImg} alt="cover-img" />
-                                    <p>{title}</p>
+                                    <div className="cat__title">
+                                        <p>{catName}</p>
+
+                                    </div>
+
                                 </div>
                                 <div className="cat__name">
-                                    <h3>{catName}</h3>
+                                    <h3>{title}</h3>
                                 </div>
                             </article>
                         })
