@@ -1,4 +1,5 @@
 import React from 'react'
+import { catData } from "../Data/CatData"
 
 const Categories = () => {
     return (
@@ -9,6 +10,24 @@ const Categories = () => {
                     <button className='btn btn-view' type="button">
                         View all
                     </button>
+                </div>
+
+                <div className="cat__main">
+
+                    {
+                        catData.map(({ id, catName, title, coverImg }) => {
+                            return <article className="cat" key={id}>
+                                <div className="cover__img">
+                                    <img src={coverImg} alt="cover-img" />
+                                    <p>{title}</p>
+                                </div>
+                                <div className="cat__name">
+                                    <h3>{catName}</h3>
+                                </div>
+                            </article>
+                        })
+                    }
+
                 </div>
             </div>
         </section>
