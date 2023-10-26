@@ -325,3 +325,11 @@ section button {
   justify-content: space-between;
   align-items: center;
 }
+
+
+.bestseller__container main {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
