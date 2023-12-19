@@ -52,6 +52,9 @@ input {
 
 body {
   font-family: "Urbanist", "Nunito";
+  background-color: aliceblue;
+  color: black;
+  /* background-color: red; */
 }
 
 nav {
@@ -332,4 +335,90 @@ section button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+}
+
+.bsell__info {
+  padding: 0.5rem 0;
+}
+
+.prices {
+  display: flex;
+  gap: 1rem;
+  align-items: first baseline;
+}
+
+.prices h3 {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+
+
+
+/*======== Offer ==========*/
+
+.offer__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+}
+
+.offer__right {
+  padding: 3rem 2rem;
+  background-color: rgb(233, 233, 233);
+  color: black;
+}
+
+.offer__right p {
+  margin: 1.5rem 0 2.5rem;
+}
+
+
+.offer__sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  gap: 1.5rem;
+}
+
+.offer__sub input {
+  display: flex;
+  flex: 1;
+}
+
+.btn-go {
+  background-color: red;
+  padding: 0.4rem 1rem;
+  color: white;
+}
+
+
+
+
+/*======== Footer ==========*/
+
+footer {
+  padding: 3rem 0 0;
+}
+
+.main__footer {
+  display: grid;
+  grid-template-columns: 1.5fr 4fr;
+  margin-bottom: 1.5rem;
+}
+
+
+.footer__right {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.footer__copywrite {
+  padding: 0.5rem 0;
+  display: grid;
+  place-content: center;
 }

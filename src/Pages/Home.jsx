@@ -4,6 +4,9 @@ import Header from '../components/Header'
 import Categories from '../components/Categories'
 import Blog from '../components/Blog'
 import BestSeller from '../components/BestSeller'
+import Offer from '../components/Offer'
+import Footer from '../components/Footer'
+
 
 
 const Home = () => {
@@ -14,6 +17,8 @@ const Home = () => {
             <Categories />
             <Blog />
             <BestSeller />
+            <Offer />
+            <Footer />
         </div>
     )
 }
