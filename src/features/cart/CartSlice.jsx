@@ -3,15 +3,16 @@
 import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
-    // cartItem,
+    cartItem: [],
     numberOfItems: 0,
     total: 0,
+    isLoading: true
 }
 
 const cartSlice = createSlice({
     name: cart,
     initialState,
-    reducer: {
+    reducers: {
 
     }
 })

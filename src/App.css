@@ -54,11 +54,12 @@ body {
   font-family: "Urbanist", "Nunito";
   background-color: aliceblue;
   color: black;
+  width: 100vw;
   /* background-color: red; */
 }
 
 nav {
-  background-color: burlywood;
+  background-color: #deb887;
   width: 100vw;
   height: 4rem;
   display: flex;
@@ -421,4 +422,71 @@ footer {
   padding: 0.5rem 0;
   display: grid;
   place-content: center;
+}
+
+
+/**=========== MEDIA QUERY (SMALL DEVICES) ======**/
+
+@media screen and (max-width: 700px) {
+
+  .container {
+    width: 96%;
+  }
+
+  .search__box {
+    display: none;
+    /* display: flex;
+    align-items: center; */
+  }
+
+
+  .nav__sec {
+    display: none;
+  }
+
+  /***============ Categories ======***/
+  .cat__main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 2.5rem 0;
+  }
+
+
+  /***============ Blog ======***/
+  .blog__container main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /***============ Best Seller ======***/
+  .bestseller__container main {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /***======== Offer ==========***/
+
+  .offer__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+  }
+
+
+  /***============ Footer ======***/
+  .main__footer {
+    grid-template-columns: 1fr;
+    margin-bottom: 1.5rem;
+  }
+
+
+  .footer__right {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
