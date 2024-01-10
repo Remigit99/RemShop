@@ -3,14 +3,19 @@ import { CiSearch } from "react-icons/ci"
 import { BsPersonCircle } from "react-icons/bs"
 import { AiOutlineHeart } from "react-icons/ai"
 
+import { useSelector } from "react-redux"
+
 const Navbar = () => {
+
+    const { numberOfItem } = useSelector(state => state.cart)
+
     return (
         <>
             <nav>
                 <div className="container nav__container">
 
                     <div className="logo">
-                        <h2>RemiShop</h2>
+                        <h2>RemShop</h2>
                     </div>
 
 
@@ -31,7 +36,7 @@ const Navbar = () => {
                             </div>
                             <div className="nav__cart">
                                 <LiaShoppingBagSolid className="icon" />
-                                <span className="items">0</span>
+                                <span className="items">{numberOfItem}</span>
                             </div>
                         </div>
 

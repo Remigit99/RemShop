@@ -425,6 +425,91 @@ footer {
 }
 
 
+
+/*======== CART PAGE ======*/
+
+
+.cart {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5rem;
+}
+
+.cart__main {
+  margin: 2rem 0;
+}
+
+.cart__item {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgb(194, 194, 194);
+}
+
+.cart__item-left {
+  display: flex;
+  gap: 1rem;
+}
+
+.item__img img {
+  width: 10rem;
+  height: 100%;
+}
+
+.item__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cart__item-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.prices {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.remove__wishlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.cart__right {
+  /* justify-content: space-between; */
+  margin-top: 2rem;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgb(194, 194, 194);
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.item__num-price,
+.promo__price,
+.total__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
+
 /**=========== MEDIA QUERY (SMALL DEVICES) ======**/
 
 @media screen and (max-width: 700px) {
